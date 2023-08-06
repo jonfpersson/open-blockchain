@@ -26,9 +26,9 @@ int isChainValid(std::vector<block> blocks){
 int main(int argc, char* argv[]) {
     std::vector<block> blocks;
 
-    block firstBlock("supp", "0");
-    block secondBlock("penis", firstBlock.hash);
-    block thirdBlock("monkey", secondBlock.hash);
+    block firstBlock("block one", "0");
+    block secondBlock("block two", firstBlock.hash);
+    block thirdBlock("block three", secondBlock.hash);
     blocks.push_back(firstBlock);
     blocks.push_back(secondBlock);
     blocks.push_back(thirdBlock);
